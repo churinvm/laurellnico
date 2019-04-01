@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<mainmenu>
+   <item Caption="Главная" Url="~/" />
+   <item Caption="Контакты" Url="~/Contacts.aspx" />
+</mainmenu>

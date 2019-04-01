@@ -1,0 +1,251 @@
+﻿body
+{
+    margin:0 auto;
+    width: 1024px;
+    min-height:100%;
+    font-family:Segoe Print;
+    font-size:10pt;
+    
+}
+.mainform
+{ 
+ 
+}
+
+.colLeft{
+		width:150px;		
+		float:left;
+		position:relative;
+		z-index:1;
+	}
+	.colRightContainer{
+		float:right;
+		width:100%;
+		margin-left:-150px;
+	}
+	.colRight{
+		margin-left:150px;
+	}
+	.colRight2{
+		width:124px;
+		float:right;
+		position:relative;
+		z-index:1;
+	}
+	.colCenterContainer{
+		float:left;
+		width:100%;
+		margin-right:-124px;
+	}
+	.colCenter{
+		margin-right:124px;
+	}
+.UserBlock {
+}
+.Login_btn {
+}
+
+#HUL
+{
+    height: 34px;
+    background-image:  url(  'Images/UUTbg.png'  );
+	background-repeat: repeat-x;	
+}
+.LineLinks
+{
+    height:20px;
+    padding-top: 7px;
+    
+}
+.Ulink
+{
+    
+    color: #706e6e;
+    vertical-align:middle;
+    font-size: 9pt;    
+}
+.UlinkImg
+{
+    text-decoration: none;  
+}
+.lblmailform
+{
+}
+.txtmailform
+{
+}
+
+
+#HCM
+{
+    height: 134px;   
+}
+#headermenu
+{
+    height: 21px;
+    top: -1px;
+    position: relative;
+}
+.Hmenu
+{
+    margin:-1px 10px 0 10px;
+    Color: #706e6e;
+    Height: 21px;
+    background-image: url('Images/Menubg.png');
+    Background-Repeat: Repeat-x;
+    background-position: top;
+    Width: 300px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial;
+    Font-Size: 9pt;
+    text-decoration: none;
+    
+}
+
+#HCWall
+{ 
+    margin-top: 7px;
+    height: 115px;
+    background-image:  url(  'Images/Wall.png'  );
+    background-position: bottom center;
+	background-repeat: no-repeat;
+	
+}
+
+#HBL
+{
+    height: 14px;
+    background-image:  url(  'Images/UCTbg.png'  );
+    background-position: bottom;
+	background-repeat: repeat-x;
+	
+}
+
+#MContainer
+{
+    width: 1024px;
+    background-image:  url(  'Images/LLine.png'  );
+    background-position: left;   
+    background-repeat: repeat-y;
+    float:left;
+    
+
+}
+
+#MCH
+{
+    height: 20px;
+    background-image:  url(  'Images/MCUbg.png'  );
+	background-repeat: repeat-x;
+}
+
+#MCCont
+{
+    
+    width: 1016px;
+    background-image:  url(  'Images/RLine.png'  );
+    background-position: right;
+    background-repeat: repeat-y;
+    float:right;
+}
+
+#Lmenu
+{
+    margin-left: 15px;
+    width: 210px;
+    float: left;   
+}
+.LmenuS
+{
+    background-color: White;
+    Font-Family: Bookman Old Style;
+    font-size: 10pt;
+    font-style:italic;
+    border-color: #d0d0d0;
+    border-style: Solid;
+    border-width: 1px;
+    vertical-align: Middle;
+    text-decoration: none;    
+}
+
+#Mtext
+{
+    margin: 25px 5px 10px 5px;    
+    padding-left: 13px; 
+    padding-right:5px;  
+    height:100%;
+    width: 750px;
+    float:right;
+    background-image: url( 'Images/TxtCLine.png');
+    background-position: left center;
+    background-repeat:repeat-y; 
+    
+}
+
+#MCB
+{
+    clear: both;
+    height: 16px;
+    background-image:  url(  'Images/MCBbg.png'  );
+    background-position: bottom;
+	background-repeat: repeat-x;
+}
+
+#BBCopyright
+{
+    height: 34px;
+    background-image:  url(  'Images/BBbg.png'  );
+    background-repeat: repeat-x;
+    font-size:small;
+    text-align: center;
+    vertical-align:middle;
+}
+
+
+
+#Bline
+{
+    margin-left: 20px;
+    width: 100%;
+    top: 100px;    
+	height: 10px;
+	background-image:  url(  'Images/line.png'  );
+	background-repeat: repeat-x;
+	clear:both;
+    
+}
+#LeftMenu
+{
+    margin-left: 20px;
+    height: 100%;
+    width: 150px;
+    min-height: 668px;	
+    float: left;
+    position: relative;
+    z-index: 10;  
+}
+#cont
+{
+    width:100%;
+    float: right;
+	margin-left:-170px;
+}
+#content
+{
+    margin-left: 170px;
+	min-height: 354px;	
+	font-family: Times New Roman;
+	font-size: 14px;
+	color: Black;
+}
+.cleared
+{
+    clear: both;
+	width: 100%;
+	height: 5px;
+	min-height: 5px;
+	top:0px;	
+}
+
+

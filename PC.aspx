@@ -1,0 +1,86 @@
+﻿<%@ page language="C#" masterpagefile="~/MainTemplate.master" autoeventwireup="true" CodeFile="PC.aspx.cs" inherits="Avrise.LN.UI.PC" title="LaurellNico.ru - Личный кабинет" stylesheettheme="Default"%>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dxe" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" 
+Namespace="DevExpress.Web.ASPxPopupControl" TagPrefix="dxpc" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="None" />
+
+
+</asp:Content>
+
+<asp:Content ID="ContentMain" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <asp:LinkButton runat="server" ID="ChangePassword" Text="Сменить пароль" />
+    <dxpc:ASPxPopupControl ID="ASPxPopupControl1" runat="server" PopupElementID="ChangePassword" Width="400px" ShowFooter="False" ShowHeader="True"
+    PopupHorizontalAlign="LeftSides" PopupVerticalAlign="Below" EnableHierarchyRecreation="True" Opacity="100" Height="150px" HeaderText="Регистрация" >
+        <ContentCollection>
+            <dxpc:PopupControlContentControl>
+                <asp:ChangePassword ID="ChangePassword1" runat="server" OnSendingMail="PwdChange_mail" CancelButtonText="Отмена" ChangePasswordButtonText="Сменить" ChangePasswordTitleText="Смена Пароля" ConfirmNewPasswordLabelText="Подтвердите пароль:" ContinueButtonText="Продолжить" ChangePasswordFailureText="Не удалось поменять пароль, проверьте провальность ввода." NewPasswordLabelText="Новый пароль:" PasswordLabelText="Старый пароль:" SuccessText="Пароль успешно заменен" SuccessTitleText="Смена пароля завершена" UserNameLabelText="Логин:" ConfirmPasswordRequiredErrorMessage="Необходимо подтвердить новый пароль" ConfirmPasswordCompareErrorMessage="Пароль подтвержден неверно." NewPasswordRegularExpressionErrorMessage="Введите другой" NewPasswordRequiredErrorMessage="Пароль необходим" PasswordRequiredErrorMessage="Нужно ввести старый пароль" UserNameRequiredErrorMessage="Введите Логин.">
+
+                </asp:ChangePassword>
+            </dxpc:PopupControlContentControl>
+        </ContentCollection>
+    </dxpc:ASPxPopupControl>
+                        <table>
+                        
+        <tr>
+            <td>E-Mail:</td>
+            <td><asp:TextBox ID="txtEMail" runat="server" Width="150px" /></td>
+            <td><asp:RegularExpressionValidator runat="server" Display="dynamic" ID="valEmailPattern"
+                    SetFocusOnError="true" ControlToValidate="txtEmail" ValidationExpression="^(?(&quot;&quot;)(&quot;&quot;.+?&quot;&quot;@)|(([0-9a-zA-Z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-zA-Z])@))(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,6}))$"
+                    ErrorMessage="Указан неверный адрес для ответа." ForeColor="#000099">Неверно введён Емайл</asp:RegularExpressionValidator></td>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Нужно ввести Емайл" ControlToValidate="Password" Text="*" SetFocusOnError="True" Display="Dynamic" ForeColor="#000099"></asp:RequiredFieldValidator>
+        </tr>
+                            <tr>
+            <td>Tелефон:</td>
+                                
+            <td><dxe:ASPxTextBox ID="txtPhone" runat="server" Width="150px">
+                <MaskSettings Mask="+7(000) 000-00-00" />
+                </dxe:ASPxTextBox></td>
+            <td>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Нужно ввести телефон." ControlToValidate="Password" Text="*" SetFocusOnError="True" Display="Dynamic" ForeColor="#000099"></asp:RequiredFieldValidator>
+                           </td> </tr>
+        <tr>
+            <td><asp:Literal ID="ErrorMessage" runat="server" EnableViewState="False" /></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Фамилия:</td>
+		    <td><asp:TextBox id="txtFstName" runat="server" Width="150px"/></td>
+		    <td></td>
+        </tr>
+        <tr>
+            <td>Имя:</td>
+		    <td><asp:TextBox id="txtSecName" runat="server" Width="150px" /></td>
+		    <td><asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Нужно ввести Имя." ControlToValidate="txtSecName" Text="*" SetFocusOnError="True" Display="Dynamic" ForeColor="#000099"></asp:RequiredFieldValidator></td>
+		</tr>
+        <tr>
+            <td>Отчество:</td>
+		    <td><asp:TextBox id="txtTrdName" runat="server" Width="150px"/></td>
+		    <td></td>
+		</tr>
+                            </tr>
+                            <tr>
+            <td>День рождения:</td>
+                                
+            <td><dxe:ASPxTextBox ID="ASPxTextBox1" runat="server" Width="150px">
+                <MaskSettings Mask="00.00.0000" />
+                </dxe:ASPxTextBox></td>
+            <td>
+                </tr>
+		<tr>
+            <td><asp:button ID="SvNData" runat="server" CausesValidation="true" OnClick="SvNData" text="Сохранить"/></td>
+            <td><asp:ValidationSummary runat="server" ID="valSummary" ShowSummary="false" ShowMessageBox="true" /></td></tr>
+		</table>
+
+
+</asp:Content>
+
+
+
+
+
+
+

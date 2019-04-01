@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<urlMappings>
+   <add url="~/" mappedUrl="~/Default.aspx" />
+   <add url="~/Contacts.aspx" mappedUrl="~/Contacts.aspx?MessageType=1" />
+</urlMappings>

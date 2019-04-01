@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MySites_LN" Class="PagesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=mssql4.avrise.net,5801;Initial Catalog=MySites_LN;User ID=MySites_LNusr" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="LNSS" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SiteContent" Member="SiteContents">
+    <Type Name="SiteContent">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MainContent" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Hkey" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Hdescription" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="PageId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PageTitle" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="OriginalUrl" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MappedUrl" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Caption" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SubCat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
